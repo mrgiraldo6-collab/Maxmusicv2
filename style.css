@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: white;
+  text-align: center;
+}
+header {
+  background: #1db954;
+  padding: 1em;
+}
+audio {
+  margin-top: 1em;
+}
+#adContainer {
+  background: #222;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 8px;
+}
