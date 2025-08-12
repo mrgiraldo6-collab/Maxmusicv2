@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#00ff00">
-
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00ff00">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MaxMusic 🎵</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Código base de Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7390447937302532"
+       crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <h1>🎵 MaxMusic</h1>
     <h2>Reproductor de Música</h2>
   </header>
+
   <main>
     <section id="player">
       <audio id="audioPlayer" controls></audio>
       <input type="file" id="fileInput" accept="audio/*" multiple>
     </section>
+
     <section id="ads">
       <h3>Publicidad</h3>
-      <div id="adContainer">Aquí aparecerán tus anuncios</div>
+
+      <!-- Bloque de anuncio AdSense de ejemplo -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7390447937302532"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
