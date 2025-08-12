@@ -1,20 +1,19 @@
 {
-  "name": "MaxPlayer",
-  "short_name": "MaxPlayer",
+  "name": "MaxMusic",
+  "short_name": "MaxMusic",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#000000",
-  "orientation": "portrait",
-  "description": "Reproductor de música online",
+  "theme_color": "#00ff00",
+  "description": "Reproductor MaxMusic - local",
   "icons": [
     {
-      "src": "/icon-192x192.png",
+      "src": "icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icon-512x512.png",
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
