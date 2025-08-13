@@ -1,75 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>MaxMusic 🎵</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#00ff00">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MaxMusic 🎵</title>
 <link rel="stylesheet" href="style.css">
-
-<!-- AdSense base (usa tu client ID real) -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7390447937302532" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="app">
-    <header class="topbar">
-      <div class="brand">
-        <img src="icons/icon-96.png" alt="logo" class="logo">
-        <div>
-          <h1>MaxMusic</h1>
-          <p class="subtitle">Reproductor de música</p>
-        </div>
-      </div>
-      <div class="actions">
-        <button id="btnLoad" class="btn">📂 Cargar carpeta</button>
-        <button id="btnClear" class="btn danger">🧹 Limpiar lista</button>
-      </div>
-    </header>
-
-    <main>
-      <section class="player-card">
-        <div class="now">
-          <div id="nowTitle">Sin pista</div>
-          <audio id="audio" controls></audio>
-        </div>
-
-        <div class="controls">
-          <button id="prev" class="ctl">⏮</button>
-          <button id="play" class="ctl">▶️</button>
-          <button id="next" class="ctl">⏭</button>
-          <label class="vol">🔊 <input id="volume" type="range" min="0" max="1" step="0.01" value="1"></label>
-        </div>
-
-        <div class="progress">
-          <input id="seek" type="range" min="0" max="100" value="0">
-          <div class="time"><span id="cur">00:00</span> / <span id="dur">00:00</span></div>
-        </div>
-      </section>
-
-      <section class="playlist-card">
-        <h2>Lista de reproducción</h2>
-        <ul id="playlist" class="playlist"></ul>
-      </section>
-
-      <section class="ad-card">
+<header>
+    <img src="icon-192x192.png" alt="Logo" style="width:80px;height:80px;border-radius:50%;">
+    <h1>🎵 MaxMusic</h1>
+    <h2>Reproductor de Música</h2>
+</header>
+<main>
+    <section id="player">
+        <audio id="audioPlayer" controls></audio>
+        <input type="file" id="fileInput" accept="audio/*" multiple>
+    </section>
+    <section id="ads">
         <h3>Publicidad</h3>
-        <!-- Bloque AdSense ejemplo -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-7390447937302532"
-             data-ad-slot="1234567890"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <small>MaxMusic — PWA · Local music player</small>
-    </footer>
-  </div>
-
+        <div id="adContainer">Aquí aparecerán tus anuncios</div>
+    </section>
+</main>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7390447937302532"
+     crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>

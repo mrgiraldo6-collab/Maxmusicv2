@@ -1,32 +1,15 @@
-/* Dark modern styles with neon green accents */
-:root{
-  --bg:#0b0b0c;
-  --card:#121214;
-  --muted:#9aa0a6;
-  --accent:#1db954;
-  --danger:#e55353;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    margin: 0;
 }
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#070707,#0f0f10);color:#fff;-webkit-font-smoothing:antialiased}
-.app{max-width:920px;margin:0 auto;padding:12px}
-.topbar{display:flex;align-items:center;justify-content:space-between;padding:8px 12px}
-.brand{display:flex;gap:12px;align-items:center}
-.logo{width:56px;height:56px;border-radius:12px;background:#000;object-fit:cover}
-.subtitle{margin:0;color:var(--muted);font-size:12px}
-.btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:10px;color:#fff}
-.btn.danger{border-color:rgba(255,80,80,0.25);color:var(--danger)}
-.player-card{background:var(--card);padding:12px;border-radius:12px;margin-top:12px}
-.now{display:flex;flex-direction:column;gap:8px}
-.now #nowTitle{font-weight:600}
-.controls{display:flex;gap:8px;align-items:center;margin-top:8px}
-.ctl{background:linear-gradient(90deg,rgba(29,185,84,0.12),rgba(29,185,84,0.06));border:none;padding:10px 14px;border-radius:10px;color:#fff;font-size:18px}
-.progress{margin-top:10px}
-.progress input[type=range]{width:100%}
-.playlist-card{background:var(--card);padding:12px;border-radius:12px;margin-top:12px}
-.playlist{list-style:none;padding:0;margin:0;max-height:320px;overflow:auto}
-.playlist li{display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;margin-bottom:6px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
-.playlist li .meta{display:flex;flex-direction:column}
-.playlist li button{background:transparent;border:0;color:var(--muted);padding:6px}
-.ad-card{background:var(--card);padding:12px;border-radius:12px;margin-top:12px}
-.footer{text-align:center;padding:14px;color:var(--muted);font-size:13px;margin-top:8px}
-@media(max-width:600px){.app{padding:8px}.logo{width:48px;height:48px}}
+header {
+    background: #222;
+    padding: 10px;
+}
+audio {
+    width: 80%;
+    margin-top: 20px;
+}
